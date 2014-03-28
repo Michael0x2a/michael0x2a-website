@@ -1,4 +1,19 @@
+# General site config
 name: michael0x2a
-markdown: redcarpet
 pygments: true
 
+# Markdown options
+markdown: redcarpet
+redcarpet:
+    extensions: [smart]
+
+# Links and link rewriting
+permalink: /blog/:title
+
+# Jekyll-assets
+assets:
+    cache: true
+    sources:
+        - _assets/javascripts
+        - _assets/media
+        - _assets/stylesheets
