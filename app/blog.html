@@ -1,0 +1,26 @@
+---
+layout: default
+title: Blog Archive
+id: blog
+---
+
+{% assign first = true %}
+{% assign date = nil %}
+{% for post in site.posts %}
+    {% assign currentDate = post.date | date: "%B %Y" %}
+    {% if currentDate != date %}
+        {% if first != true %}
+            </ul>
+        {% endif %}
+        
+        <h3>{{ currentDate }}</h3>
+        <ul class="archive-month">
+        
+        {% assign date = currentDate %}
+        {% assign first = false %}
+    {% endif %}
+    <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+{% endfor %}
+</ul>

@@ -1,0 +1,9 @@
+$icon-font-path: "/_bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "../../_bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+// endbower 
+
+@import "syntax.scss";
+@import "custom/layout.scss";
+@import "custom/nav.scss";

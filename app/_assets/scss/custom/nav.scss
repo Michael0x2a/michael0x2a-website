@@ -1,0 +1,9 @@
+.navbar-custom {
+    @media (min-width: $screen-xs-max) {
+        .navbar-brand {
+            display: none;
+        }
+    }
+    
+    
+}

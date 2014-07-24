@@ -1,0 +1,15 @@
+-   title: "Home"
+    id: home
+    url: /
+-   title: "Blog"
+    id: blog
+    url: /blog.html
+-   title: "Projects"
+    id: projects
+    url: /projects.html
+-   title: "Resume"
+    id: resume
+    url: /resume.html
+-   title: "Contact"
+    id: contact
+    url: /contact.html
