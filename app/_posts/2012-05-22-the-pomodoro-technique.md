@@ -1,8 +1,9 @@
 ---
-layout: default
-title:  "The Pomodoro Technique"
-date:   2012-05-22
-tags: personal pomodoro
+layout: post
+title: "The Pomodoro Technique"
+date: 2012-05-22
+parent_id: blog
+id: the-pomodoro-technique
 ---
 
 To help boost my productivity, I've recently started looking into the [Pomodoro Technique](http://en.wikipedia.org/wiki/Pomodoro_Technique).  Essentially, it breaks tasks down into 25 minute chunks (called Pomodoros) with 5 minute breaks in between, and a 15 minute break every 4 chunks.

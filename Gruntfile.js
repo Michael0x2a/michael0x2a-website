@@ -11,8 +11,40 @@
 module.exports = function (grunt) {
   // Show elapsed time after tasks run
   require('time-grunt')(grunt);
+  // Rewrite urls to handle missing .html
+  var rewriteModule = require('http-rewrite-middleware');
+  
+  var middleware_func = function(connect, options) {
+    var middlewares = [];
+    middlewares.push(rewriteModule.getMiddleware([
+      {
+        from: '^(\/)$',
+        to: '$1'
+      },
+      {
+        from: '^([^\.]+?)\/?$',
+        to: '$1.html'
+      }
+    ]));
+    
+    if (!Array.isArray(options.base)) {
+      options.base = [options.base];
+    }
+    
+    var directory = options.directory || options.base[options.base.length - 1];
+    options.base.forEach(function (base) {
+      middlewares.push(connect.static(base));
+    });
+    
+    middlewares.push(connect.directory(directory));
+    return middlewares;
+  };
+  
+  
   // Load all Grunt tasks
   require('load-grunt-tasks')(grunt);
+  // Speedup
+  //require('jit-grunt')(grunt);
 
   grunt.initConfig({
     // Configurable paths
@@ -21,6 +53,9 @@ module.exports = function (grunt) {
       dist: 'dist'
     },
     watch: {
+      options: {
+        spawn: false
+      },
       bower: {
         files: ['bower.json'],
         tasks: ['wiredep']
@@ -30,6 +65,9 @@ module.exports = function (grunt) {
             '<%= yeoman.app %>/_assets/scss/**/*.{scss,sass}',
             '<%= yeoman.app %>/_bower_components/bootstrap-sass-official/assets/stylesheets/*.{scss,sass}'],
         tasks: ['compass:server', 'autoprefixer:server']
+      },
+      css: {
+        files: ['<% yeoman.app %>/_assets/css/**/*.css']
       },
       autoprefixer: {
         files: ['<%= yeoman.app %>/_assets/css/**/*.css'],
@@ -68,7 +106,8 @@ module.exports = function (grunt) {
             '.tmp',
             '.jekyll',
             '<%= yeoman.app %>'
-          ]
+          ],
+          middleware: middleware_func
         }
       },
       dist: {
@@ -76,7 +115,8 @@ module.exports = function (grunt) {
           open: true,
           base: [
             '<%= yeoman.dist %>'
-          ]
+          ],
+          middleware: middleware_func
         }
       },
       test: {
@@ -86,7 +126,8 @@ module.exports = function (grunt) {
             '.jekyll',
             'test',
             '<%= yeoman.app %>'
-          ]
+          ],
+          middleware: middleware_func
         }
       }
     },
@@ -194,14 +235,23 @@ module.exports = function (grunt) {
       }
     },
     useminPrepare: {
+      html: '<%= yeoman.dist %>/index.html',
       options: {
-        dest: '<%= yeoman.dist %>'
-      },
-      html: '<%= yeoman.dist %>/index.html'
+        dest: '<%= yeoman.dist %>',
+        flow: {
+          html: {
+            steps: {
+              js: ['concat', 'uglifyjs'],
+              css: ['cssmin']
+            },
+            post: {}
+          }
+        }
+      }
     },
     usemin: {
       options: {
-        assetsDirs: '<%= yeoman.dist %>',
+        assetsDirs: ['<%= yeoman.dist %>', '<%= yeoman.dist %>/_assets']
       },
       html: ['<%= yeoman.dist %>/**/*.html'],
       css: ['<%= yeoman.dist %>/_assets/css/**/*.css']
@@ -223,9 +273,9 @@ module.exports = function (grunt) {
       }
     },
     // Usemin adds files to concat
-    concat: {},
+    //concat: {},
     // Usemin adds files to uglify
-    uglify: {},
+    //uglify: {},
     // Usemin adds files to cssmin
     cssmin: {
       dist: {
@@ -271,7 +321,7 @@ module.exports = function (grunt) {
               '_assets/media/**/*',
               '_assets/fonts/**/*',
               // Like Jekyll, exclude files & folders prefixed with an underscore.
-              '!**/_*{,/**}',
+              //'!**/_*{,/**}',
               // Explicitly add any files your site needs for distribution here.
               //'_bower_components/jquery/jquery.js',
               //'favicon.ico',
@@ -304,7 +354,7 @@ module.exports = function (grunt) {
               '_assets/media/**/*',
               '_assets/fonts/**/*',
               // Like Jekyll, exclude files & folders prefixed with an underscore.
-              '!**/_*{,/**}',
+              //'!**/_*{,/**}',
               // Explicitly add any files your site needs for distribution here.
               //'_bower_components/jquery/jquery.js',
               //'favicon.ico',

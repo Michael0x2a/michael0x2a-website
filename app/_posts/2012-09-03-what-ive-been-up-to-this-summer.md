@@ -1,8 +1,9 @@
 ---
-layout: default
-title:  "What I've been up to this summer"
-date:   2012-09-03
-tags: code microsoft personal summary writeup
+layout: post
+title: "What I've been up to this summer"
+date: 2012-09-03
+parent_id: blog
+id: what-ive-been-up-to-this-summer
 ---
 
 It's been a while since I've updated, but just for posterity, here's a summary of everything that happened to me this summer.

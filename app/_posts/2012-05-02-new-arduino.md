@@ -1,8 +1,9 @@
 ---
-layout: default
-title:  "New Arduino"
-date:   2012-05-02
-tags: arduino code experiment personal webapp writeup
+layout: post
+title: "New Arduino"
+date: 2012-05-02
+parent_id: blog
+id: new-arduino
 ---
 
 I recently got a new [Arduino](http://arduino.cc) as part of a [starter kit](http://www.sparkfun.com/products/11022) from [SparkFun](http://sparkfun.com).  I do have some prior experience in electronics through [robotics club](http://michael0x2a.com/portfolio/programming/robotics-2011-2012/), but it was enlightening finally receiving some instruction how servos and such work on a fundamental (for example, it never occurred to me that PWM (Pulse Width Modulation) cables control components by literally modifying the pulse of electricity it sends down the wire, despite seeming obvious).  

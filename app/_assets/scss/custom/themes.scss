@@ -1,0 +1,92 @@
+/**
+ * themes.scss
+ *
+ * Contains styles related to site section themes (primarily colors)
+ */
+ 
+@import "../../_bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss";
+
+@mixin theme-color($color) {
+    body {
+        background-color: lighten($color, 25%);
+    }
+    
+    a {
+        color: darken($color, 15%);
+        
+        &:hover, &:active {
+            color: darken($color, 35%);
+        }
+    }
+    
+    hr {
+        border-color: $color;
+    }
+    
+    .container {
+        border-top: 10px solid $color;
+        border-bottom: 10px solid $color;
+        background-color: #fff;
+    }
+    
+    .navbar-custom {
+        border-color: lighten($color, 25%);
+        
+        .navbar-toggle {
+            border-color: $color;
+            
+            .icon-bar {
+                background-color: $color;
+            }
+            
+            &:hover {
+                background-color: $color;
+                
+                .icon-bar {
+                    background-color: #fff;
+                }
+            }
+        }
+        
+        @media (min-width: $screen-xs-max) {
+            .active a {
+                background-color: $color;
+            }
+        
+            a:hover, a:active {
+                background-color: lighten($color, 25%);
+            }
+        }
+    }
+}
+
+$home-color: #5db9aa;
+$blog-color: #789bef;
+$projects-color: #a0cf5f;
+$resume-color: #e3ab6a;
+$contact-color: #6dd169;
+$error-color: #ef7070;
+
+.home {
+    @include theme-color($home-color);
+}
+
+.blog {
+    @include theme-color($blog-color);
+}
+
+.projects {
+    @include theme-color($projects-color);
+}
+
+.resume {
+    @include theme-color($resume-color);
+}
+
+.contact {
+    @include theme-color($contact-color);
+}
+
+.error {
+    @include theme-color($error-color);
+}

@@ -1,8 +1,9 @@
 ---
-layout: default
-title:  "Shooting threat at school"
-date:   2012-09-21
-tags: personal school shooting
+layout: post
+title: "Shooting threat at school"
+date: 2012-09-21
+parent_id: blog 
+id: shooting-threat-at-school
 ---
 
 Last updated Thursday, September 20th, midnight.

@@ -3,11 +3,13 @@
 # 2. config.build.yml
 # 3. config.yml
 
-name: michael0x2a-website-temp
+name: michael0x2a-website
 description: My personal blog
 author:
   name: Michael Lee
   email: michael.lee.0x2a@gmail.com
+
+permalink: /blog/:title.html
 
 # Grunt handles images and assets.
 exclude: ['media', 'css', 'javascript', 'fonts',

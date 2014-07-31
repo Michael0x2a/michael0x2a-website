@@ -7,20 +7,20 @@ id: blog
 {% assign first = true %}
 {% assign date = nil %}
 {% for post in site.posts %}
-    {% assign currentDate = post.date | date: "%B %Y" %}
+    {% assign currentDate = post.date | date: "%Y" %}
     {% if currentDate != date %}
         {% if first != true %}
             </ul>
         {% endif %}
         
         <h3>{{ currentDate }}</h3>
-        <ul class="archive-month">
+        <ul class="archive-year">
         
         {% assign date = currentDate %}
         {% assign first = false %}
     {% endif %}
     <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ post.url | clean_url }}">{{ post.title }}</a>
     </li>
 {% endfor %}
 </ul>

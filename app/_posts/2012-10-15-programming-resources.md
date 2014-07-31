@@ -1,8 +1,10 @@
 ---
-layout: default
+layout: post
 title: "Programming resources"
 date: 2012-10-15
-tags: code python resources
+updated: 2014-07-29
+parent_id: blog
+id: programming-resources
 ---
 
 For the past few years, I've had multiple people ask me how to start programming,
@@ -74,11 +76,19 @@ In general, simply reading through the top-rated posts on Stack Overflow is a go
 
 These articles are focused on information about coding in general.
 
+*   [How to debug small programs](http://ericlippert.com/2014/03/05/how-to-debug-small-programs/)
+    
+    Often times, I find that beginner programmers don't know how to react or debug their 
+    code when things go wrong and often resort to making random and increasingly erratic
+    changes to their code. I found this writeup by Eric Lippert to be a fairly 
+    good introduction on how to begin debugging and developing a more methodical 
+    mindset to writing programs.
+
 *   [Advice to Aimless, Excited Programmers](http://prog21.dadgum.com/80.html)  
 
     A lot of people learn how to program, but don't really know how to move
-    on beyond reading the tutorials, or how to get started actually coding something. This article
-    addresses some of that, and the mindset you should adopt to begin coding.
+    on beyond reading the tutorials, or how to get started actually coding something. 
+    This article addresses some of that, and the mindset you should adopt to begin coding.
     
 *   [How to be a hacker](http://www.catb.org/esr/faqs/hacker-howto.html)  
 

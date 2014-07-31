@@ -1,0 +1,41 @@
+/**
+ * layout.scss
+ *
+ * This file primarily describes CSS elements that applies to either large portions of 
+ * the website or to multiple components/slices. 
+ */
+
+@import "../../_bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss";
+@import "variables.scss";
+ 
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background-color: $default-color-light;
+}
+
+.container {
+    background-color: #fff;
+    border-top: 10px solid $default-color;
+    border-bottom: 10px solid $default-color;
+    box-shadow: 0px 5px 8px 0px rgba(50, 50, 50, 0.75);
+    
+    padding-bottom: 2em;
+    
+    @media (min-width: $screen-xs-max) {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    
+    margin: 1em auto;
+    @media (max-width: $screen-xs-max) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.slice {
+    margin-bottom: 1em;
+}

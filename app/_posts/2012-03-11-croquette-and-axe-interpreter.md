@@ -1,8 +1,9 @@
 ---
-layout: default
-title:  "Croquette and Axe Interpreter"
-date:   2012-03-11
-tags: calculator code project writeup
+layout: post
+title: "Croquette and Axe Interpreter"
+date: 2012-03-11
+parent_id: blog
+id: croquette-and-axe-interpreter
 ---
 
 ## Introduction

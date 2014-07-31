@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html class="{{ page.id }} {{ page.parent_id }}" lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- build:css(.) /_assets/css/vendor.css -->
+    <!-- build:css(app) /_assets/css/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
@@ -23,12 +23,15 @@
     <![endif]-->
 
     <div class="container">
+        {% include header.html %}
         {% include nav.html %}
-
-        {{ content }}
+        <div class="content slice">
+            {{ content }}
+        </div>
+        {% include footer.html %}
     </div>
 
     {% include scripts.html %}
-
+    <script src="//localhost:35729/livereload.js"></script>
   </body>
 </html>

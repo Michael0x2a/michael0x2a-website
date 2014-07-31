@@ -2,6 +2,7 @@
 layout: default
 title: "Projects"
 id: projects
+class: projects
 ---
 
 The majority of my projects are related to programming, although I've also dabbled in piano, origami, and other miscellaneous concepts.

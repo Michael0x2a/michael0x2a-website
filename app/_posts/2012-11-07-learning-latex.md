@@ -1,8 +1,9 @@
 ---
-layout: default
+layout: post
 title: "Learning LaTeX"
 date: 2012-11-07
-tags: code latex tutorial writeup
+parent_id: blog
+id: learning-latex
 ---
 
 I recently learned how to use [LaTeX](http://en.wikipedia.org/wiki/LaTeX), which is a document markup language which can be seen as a sort of replacement for Microsoft Word. You can write text like this:

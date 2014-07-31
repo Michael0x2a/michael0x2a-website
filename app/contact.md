@@ -2,6 +2,7 @@
 layout: default
 title: "Contact"
 id: contact
+class: contact
 ---
 
 <dl>

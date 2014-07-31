@@ -2,6 +2,7 @@
 layout: default
 title: "Resume"
 id: resume
+class: resume
 ---
 
 You can find the most up-to-date information about me in one of the following places:
