@@ -1,0 +1,40 @@
+/**
+ * articles.scss
+ *
+ * Contains styles specifically relating to blog posts
+ */
+
+@import "variables.scss";
+ 
+.subtitle {
+    font-family: $sans-serif-fonts;
+    font-size: 1.5em;
+    color: $default-color-light;
+}
+
+.blog-footer {
+    border-top: 1px solid $default-color-light;
+    margin-top: 1em;
+    padding: 1em 0;   
+}
+
+.prev-next {
+    font-size: 1.3em;
+    
+    .previous, .index {
+        margin-right: .5em;
+    }
+    
+    .next, .index {
+        margin-left: .5em;
+    }
+    
+    .inactive {
+        color: $default-color-light;
+    }
+    
+    .inactive:hover {
+        text-decoration: none;
+        cursor: default;
+    }
+}

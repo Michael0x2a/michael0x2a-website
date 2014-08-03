@@ -1,15 +1,25 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+# michael0x2a.com - humans.txt
 
-# TEAM
+This website was built by:
 
-    <name> -- <role> -- <twitter>
+    Michael Lee (michael.lee.0x2a@gmail.com).
 
-# THANKS
+The source code, including both content and build instructions, can be found at:
 
-    <name>
+    https://github.com/michael0x2a/michael0x2a-website
+    
+I manage my dependencies and automate my build using:
 
-# TECHNOLOGY COLOPHON
+    Yeoman
+    Bower
+    Grunt
+    
+I build my site using the following framework and plugins:
 
-    HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+    Jekyll
+    kramdown-with-pygments (https://github.com/mvdbos/kramdown-with-pygments)
+    jekyll-humanize (https://github.com/23maverick23/jekyll-humanize)
+    Jekyll sitemap generator (https://github.com/kinnetica/jekyll-plugins)
+    
+    
+    

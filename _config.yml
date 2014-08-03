@@ -3,12 +3,17 @@
 # 2. config.build.yml
 # 3. config.yml
 
-name: michael0x2a-website
-description: My personal blog
+# Metadata 
+name: Michael0x2a
+description: My personal ramblings and snippits (mostly tech-related)
+url: http://michael0x2a.com
 author:
-  name: Michael Lee
-  email: michael.lee.0x2a@gmail.com
-
+    name: Michael Lee
+    email: michael.lee.0x2a@gmail.com
+  
+# Links
+# Note: Always use the `clean_url` filter when using internal urls to 
+# strip off the '.html'
 permalink: /blog/:title.html
 
 # Grunt handles images and assets.
@@ -21,8 +26,24 @@ include: ['.htaccess']
 future: true
 show_drafts: true
 
-# Markdown library
-markdown: redcarpet
-#   extensions: ['fenced_code_blocks', 'smart']
+# Markdown and syntax highlighting
+markdown: KramdownPygments
+kramdown:
+    input: GFM
+highlighter: pygments
 
-pygments: true
+# Sitemap
+sitemap:
+    file: "/sitemap.xml"
+    exclude: "/feed.xml"
+    include_posts:
+    -   "/index.html"
+    -   "/blog.html"
+    
+    
+# Humanize
+humanize:
+    date_format: "%B %d, %Y"
+    
+# Disqus config 
+disqus_shortname: 'dev-michael0x2a'

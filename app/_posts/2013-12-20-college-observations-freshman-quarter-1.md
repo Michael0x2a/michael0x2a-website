@@ -3,7 +3,7 @@ layout: post
 title: "College Observations: Freshman, Quarter 1"
 date: 2013-12-29
 parent_id: blog
-id: college-observations-freshman-quarter-1
+page_id: college-observations-freshman-quarter-1
 ---
 
 I've just finished my first quarter of college at [UW](http://www.washington.edu). Overall, I think it went fairly well -- the coursework was fairly straightforward, and I didn't have too much difficulty adjusting to campus life. I thought it might be nice to create a writeup every quarter reflecting on how things went, and what college is life. If anything, it'll serve as a nice time capsule several years into the future.

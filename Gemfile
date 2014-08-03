@@ -1,5 +1,5 @@
 source "http://rubygems.org"
 
-gem 'jekyll', '~>1.5.1'
-gem 'redcarpet'
+gem 'jekyll', '~>2.2.0'
+gem 'kramdown'
 gem 'compass', '>=0.12'

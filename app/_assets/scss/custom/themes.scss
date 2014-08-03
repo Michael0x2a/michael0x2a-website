@@ -5,6 +5,7 @@
  */
  
 @import "../../_bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss";
+@import "variables.scss";
 
 @mixin theme-color($color) {
     body {
@@ -58,14 +59,15 @@
             }
         }
     }
+    
+    .subtitle {
+        color: $color;
+    }
+    
+    .blog-footer {
+        border-top-color: $color;
+    }
 }
-
-$home-color: #5db9aa;
-$blog-color: #789bef;
-$projects-color: #a0cf5f;
-$resume-color: #e3ab6a;
-$contact-color: #6dd169;
-$error-color: #ef7070;
 
 .home {
     @include theme-color($home-color);

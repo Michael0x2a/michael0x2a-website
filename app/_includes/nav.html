@@ -12,7 +12,7 @@
         <ul class="nav navbar-nav">
             {% for link in site.data.nav %}
                 {% assign current = nil %}
-                {% if (page.id == link.id) or (page.parent_id == link.id) %}
+                {% if (page.page_id == link.id) or (page.parent_id == link.id) %}
                     {% assign current = ' class="active"' %}
                 {% endif %}
                 <li{{ current }}>

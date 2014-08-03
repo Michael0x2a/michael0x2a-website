@@ -3,7 +3,7 @@ layout: post
 title: "Shooting threat at school"
 date: 2012-09-21
 parent_id: blog 
-id: shooting-threat-at-school
+page_id: shooting-threat-at-school
 ---
 
 Last updated Thursday, September 20th, midnight.

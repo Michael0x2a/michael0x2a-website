@@ -4,7 +4,7 @@ title: "Mastermind Solver"
 date: 2013-05-17
 updated: 2014-07-29
 parent_id: blog
-id: mastermind-solver
+page_id: mastermind-solver
 math: true
 ---
 
@@ -63,11 +63,11 @@ which picked equidistant hue values around the HSV space.  Mathematically, if th
 existed some function `HSV` which accepted the hue, saturation, and value of a color, 
 I could find a sequence of `n` equidistant colors using the algorithm:
 
-{% math %}
+$$
 \Phi = \text{Golden Ratio} = 0.618033088... \\
 S = \text{desired saturation value from 0 to 1} \\
 \left\langle \mathrm{HSV}\!\left( k \cdot \Phi \bmod 1, S, \sqrt{1 - (k \cdot \Phi \bmod 0.5)}\right) : k \in n \right\rangle
-{% endmath %}
+$$
 
 ...or in Javascript:
 

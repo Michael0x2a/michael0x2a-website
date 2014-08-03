@@ -4,8 +4,7 @@
  * Contains CSS related to typography, fonts, etc.
  */
  
-$serif-fonts: Cambria, Georgia, serif;
-$sans-serif-fonts: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+@import "variables.scss";
 
 body {
     font-family: $serif-fonts;

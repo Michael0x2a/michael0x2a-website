@@ -29,7 +29,11 @@
     "load-grunt-tasks": "~0.2.0",
     "time-grunt": "~0.2.8",
     "jit-grunt": "^0.7.0",
-    "http-rewrite-middleware": "^0.1.6"
+    "http-rewrite-middleware": "^0.1.6",
+    "grunt-uncss": "^0.3.5",
+    "grunt-newer": "^0.7.0",
+    "grunt-notify": "^0.3.0",
+    "grunt-text-replace": "^0.3.12"
   },
   "engines": {
     "node": ">=0.8.0"

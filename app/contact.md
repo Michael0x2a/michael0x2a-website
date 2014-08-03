@@ -1,8 +1,7 @@
 ---
 layout: default
 title: "Contact"
-id: contact
-class: contact
+page_id: contact
 ---
 
 <dl>

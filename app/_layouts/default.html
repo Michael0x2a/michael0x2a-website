@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html class="{{ page.id }} {{ page.parent_id }}" lang="en">
+<html class="{{ page.page_id }} {{ page.parent_id }}" lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ page.title }}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- rss feed -->
+    <link rel="alternate" type="application/rss+xml" title="Michael0x2a - Articles" href="http://michael0x2a.com/feed.xml">
 
     <!-- build:css(app) /_assets/css/vendor.css -->
     <!-- bower:css -->
@@ -32,6 +35,5 @@
     </div>
 
     {% include scripts.html %}
-    <script src="//localhost:35729/livereload.js"></script>
   </body>
 </html>

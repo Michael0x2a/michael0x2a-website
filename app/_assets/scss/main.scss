@@ -4,9 +4,19 @@ $icon-font-path: "/_bower_components/bootstrap-sass-official/assets/fonts/bootst
 @import "../../_bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
 // endbower 
 
-@import "syntax.scss";
+// Setup
 @import "custom/variables.scss";
+
+// Text
+@import "syntax.scss";
 @import "custom/typography.scss";
+
+// Layout
 @import "custom/layout.scss";
+@import "custom/articles.scss";
+
+// Components
 @import "custom/nav.scss";
+
+// Final tweaks
 @import "custom/themes.scss";

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-id: home
+page_id: home
 ---
 
 ## Latest posts 

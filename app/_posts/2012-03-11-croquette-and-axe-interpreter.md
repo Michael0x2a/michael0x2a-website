@@ -3,7 +3,7 @@ layout: post
 title: "Croquette and Axe Interpreter"
 date: 2012-03-11
 parent_id: blog
-id: croquette-and-axe-interpreter
+page_id: croquette-and-axe-interpreter
 ---
 
 ## Introduction

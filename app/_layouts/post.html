@@ -7,6 +7,7 @@ layout: default
     {% if page.subtitle %}
         <p class="subtitle">{{ page.subtitle }}</p>
     {% endif %}
+    
     <details>
         <p>First published: {{ page.date | date: "%B %d, %Y" }}</p>
         {% if page.updated %}
@@ -14,5 +15,27 @@ layout: default
         {% endif %}
     </details>
     
+    <hr>
+    
     {{ content }}
+    
+    <div class="blog-footer">
+        <div class="prev-next">
+            {% if page.previous != nil %}
+                <a href="{{ page.previous.url | clean_url }}" class="previous">
+                    <span class="glyphicon glyphicon-arrow-left"></span>
+                    Previous
+                </a> |
+            {% endif %}
+            <a href="/blog" class="index">Index</a>
+            {% if page.next != nil %}
+                | <a href="{{ page.next.url | clean_url}}" class="next">
+                    Next
+                    <span class="glyphicon glyphicon-arrow-right"></span>
+                </a>
+            {% endif%}
+        </div>
+    </div>
+    
+    {% include comments.html %}
 </article>

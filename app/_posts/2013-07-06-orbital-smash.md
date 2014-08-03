@@ -3,7 +3,7 @@ layout: post
 title: "Orbital Smash"
 date: 2013-07-06
 parent_id: blog
-id: orbital-smash
+page_id: orbital-smash
 math: true
 ---
 
@@ -95,11 +95,9 @@ depending on how much force they were hit with.
 Collision was surprisingly easy -- if I use vectors to represent the velocity of each 
 object, the angle of reflection was just:
 
-{% math %}
+$$
 v - (2 (\text{normal} \cdot v)) \text{normal}
-{% endmath %}
-
-test
+$$
 
 ...where `v` is the directional vector of the moving object, `normal` is the unit 
 normal where the ball collides, and the dot represents the dot product.

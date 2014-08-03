@@ -4,7 +4,7 @@ title: "Programming resources"
 date: 2012-10-15
 updated: 2014-07-29
 parent_id: blog
-id: programming-resources
+page_id: programming-resources
 ---
 
 For the past few years, I've had multiple people ask me how to start programming,

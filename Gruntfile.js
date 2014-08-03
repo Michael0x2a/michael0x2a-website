@@ -198,12 +198,23 @@ module.exports = function (grunt) {
         }]
       }
     },
+    uncss: {
+      dist: {
+        options: {
+          csspath: '../.tmp',
+          stylesheets: ['../.tmp/_assets/css/main.css']
+        },
+        files: {
+          '.tmp/_assets/css/main.css': ['<%= yeoman.dist %>/**/*.html']
+        }
+      }
+    },
     wiredep: {
       options: {
         cwd: '<%= yeoman.app %>'
       },
       app: {
-        src: ['<% yeoman.app%>/_layouts/*.html'],
+        src: ['<%= yeoman.app%>/_layouts/*.html'],
         ignorePath:  /\.\.\//
       },
       sass: {
@@ -444,6 +455,32 @@ module.exports = function (grunt) {
         'compass:dist',
         'copy:dist'
       ]
+    },
+    replace: {
+      dist: {
+        src: ['<%= yeoman.dist %>/_assets/css/*.css'],
+        overwrite: true,                 // overwrite matched source files
+        replacements: [
+          {
+            from: '/_bower_components/bootstrap-sass-official/assets/fonts/bootstrap/',
+            to: '/_assets/css/bootstrap/'
+          }
+        ]
+      }
+    },
+    notify: {
+      server: {
+        options: {
+          title: 'Watch Complete',
+          message: 'Ready to go!'
+        }
+      },
+      dist: {
+        options: {
+          title: 'Finished Building',
+          message: 'Ready to deploy!'
+        }
+      }
     }
   });
 
@@ -459,13 +496,9 @@ module.exports = function (grunt) {
       'concurrent:server',
       'autoprefixer:server',
       'connect:livereload',
+      'notify:server',
       'watch'
     ]);
-  });
-
-  grunt.registerTask('server', function () {
-    grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
-    grunt.task.run(['serve']);
   });
 
   // No real tests yet. Add your own.
@@ -492,13 +525,16 @@ module.exports = function (grunt) {
     'useminPrepare',
     'concat',
     'autoprefixer:dist',
+    'uncss',
     'cssmin',
     'uglify',
     'imagemin',
     'svgmin',
     'filerev',
     'usemin',
-    'htmlmin'
+    'replace:dist',
+    'htmlmin',
+    'notify:dist'
     ]);
 
   grunt.registerTask('deploy', [
