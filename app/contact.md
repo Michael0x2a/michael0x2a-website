@@ -15,12 +15,4 @@ page_id: contact
         <br />
         mlee42 &lt; @ &gt; cs.washington.<span style="display:none;">[RANDOM ANTI-SPAM TEXT -- remove me ]</span>edu
     </dd>
-    <dt>Address</dt>
-    <dd>
-        24218 SE 40th ST<br />
-        Issaquah WA, 98029</dd>
-    <dt>Phone (cell)</dt>
-    <dd>
-        (425) 753-8023
-    </dd>
 </dl>

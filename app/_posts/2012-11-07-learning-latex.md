@@ -67,9 +67,9 @@ Alternatively, I found that [writelatex.com](http://writelatex.com) is a fairly 
 
 To run LaTeX, use the following:
 
-<pre lang="text" title="Command line arguments to generate pdf files">
+```
 latex -output-format=pdf my-latex-file-here.tex
-</pre>
+```
 
 (LaTeX doesn't generate pdf files by default)
 
@@ -139,6 +139,7 @@ After poking around, I found myself reusing this same preamble over and over aga
 * I used the `article` documentclass here -- I alternate from `article` for normal paper, and `report` for the occasional large paper. I also tend to make additional modifications to the `report` documentclass (see below).
 
 ### Notes on packages.
+
 * The `nag` package will spout warning messages if it detects me using old packages. `fixltx2e`, `microtype`, and `inputenc` are recommendations from [StackOverflow](http://stackoverflow.com/a/1984478/646543).
 * The `amsmath` package replaces the default math stuff in LaTeX, and makes it look better. `amssymb` loads additional math symbols (the 'therefore' symbol, for example). `mathtools` allegedly repairs various small problems with `amsmath`.
 * The default tables in LaTeX can potentially look quite ugly -- `booktabs` provides a far more elegant alternative. 

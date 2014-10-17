@@ -9,42 +9,26 @@ page_id: turtle-examples
 
 ## Introduction
 
-My very first introduction to programming came in 7th or 8th grade in one of my 
-elective classes. On the first or second day of class, my teacher explained to us
-that we'd be learning a programming language called "Logo", which was based around
-the idea of controlling an imaginary "turtle" with a pen attached to its tail to 
-draw pictures and graphics.
+My very first introduction to programming came in 7th or 8th grade in one of my elective classes. On the first or second day of class, my teacher explained to us that we'd be learning a programming language called "Logo", which was based around the idea of controlling an imaginary "turtle" with a pen attached to its tail to draw pictures and graphics.
 
-Our teacher then proceeded to hand us a thick packet of examples, and told us to 
-go off and try them. So long as we completed a set number of exercises each day, we 
-were free to experiment and do whatever we liked. I had a tremendous amount of fun 
-in this class. I'm not entirely sure how much I actually ended up learning, since I 
-was mostly blindly copying and tweaking code, but I do remember to this day having 
-tremendous amounts of fun.
+Our teacher then proceeded to hand us a thick packet of examples, and told us to go off and try them. So long as we completed a set number of exercises each day, we were free to experiment and do whatever we liked. I had a tremendous amount of fun in this class. I'm not entirely sure how much I actually ended up learning, since I was mostly blindly copying and tweaking code, but I do remember to this day having tremendous amounts of fun.
 
-So naturally, I was very pleased to discover that Python, one of my favorite programming
-languages, came built-in with a module named "[turtle][turtle-doc]" that was very similar 
-to Logo. This document is an attempt to mirror some of the spirit of the original packet
-of examples that first introduced me to programming.
+So naturally, I was very pleased to discover that Python, one of my favorite programming languages, came built-in with a module named "[turtle][turtle-doc]" that was very similar to Logo. This document is an attempt to mirror some of the spirit of the original packet of examples that first introduced me to programming.
 
-Note: I started this document a year or so ago, but never actually got around to 
-completing or updating it beyond a few examples. Over the course of the next few months,
-I'll be sporadically adding more examples as I find time.
+Note: I started this document a year or so ago, but never actually got around to completing or updating it beyond a few examples. Over the course of the next few months, I'll be sporadically adding more examples as I find time.
 
 ---
 
 ## Example 1: Draw a line
 
-One of the simplest things you can do using the turtle module is to draw a line. 
-There are always four steps you need to do in order to use the turtle module:
+Tne of the simplest things you can do using the turtle module is to draw a line. There are always four steps you need to do in order to use the turtle module:
 
 1.  **Import** the turtle module. If we skip this step, there'll be no turtle to control.
 2.  **Create** a turtle to control.
 3.  **Draw** things. Do stuff. This will also automatically create the screen.
 4.  Run `turtle.done()`. (**NOT** `bob.done()`!)
 
-Notice that `turtle.done()` will pause the program. You'll need to close the window 
-in order to continue. 
+Notice that `turtle.done()` will pause the program. You'll need to close the window in order to continue. 
 
 {% turtle line %}
 ```python
@@ -93,23 +77,17 @@ turtle.done()
 
 ### Additional notes 
 
-The two turtle commands we've learned so far are `forward(x)`, which moves the turtle
-forward in the direction its facing by `x` number of pixels, and `right(d)`, which makes 
-it turn clockwise by `d` number of degrees. 
+The two turtle commands we've learned so far are `forward(x)`, which moves the turtle forward in the direction its facing by `x` number of pixels, and `right(d)`, which makes it turn clockwise by `d` number of degrees. 
 
-Two additional key commands are `backwards(x)`, which makes the turtle move back, and 
-`left(d)`, which makes the turtle turn **counterclockwise** by `d` degrees. 
+Two additional key commands are `backwards(x)`, which makes the turtle move back, and `left(d)`, which makes the turtle turn **counterclockwise** by `d` degrees. 
 
-Exercise: try modifying writing code to draw a square using only the `backwards` and 
-`left` commands. 
+Exercise: try modifying writing code to draw a square using only the `backwards` and `left` commands. 
 
 ---
 
 ## Example 3: Drawing a square (using loops)
 
-Do you know what else was boring? The fact that I had to copy-paste the same exact 
-lines of code 4 times in a row. Wouldn't it be great if we could just tell Python to 
-repeat the code for us?
+Do you know what else was boring? The fact that I had to copy-paste the same exact lines of code 4 times in a row. Wouldn't it be great if we could just tell Python to repeat the code for us?
 
 {% turtle square %}
 ```python
@@ -166,8 +144,7 @@ turtle.done()
     
 ### Additional notes 
 
-Why did I pick the number "144"? Why is that significant? What happens if you try 
-changing a different number?
+Why did I pick the number "144"? Why is that significant? What happens if you try changing a different number?
 
 
 ---
@@ -191,9 +168,7 @@ turtle.done()
 
 ### Additional notes 
 
-Notice that now I'm moving the turtle forward by a different amount each time. What 
-happens if instead of multiplying `i` by 10, I multiply it against itself? What if I 
-do `spiral.forward(i * i)` instead?
+Notice that now I'm moving the turtle forward by a different amount each time. What happens if instead of multiplying `i` by 10, I multiply it against itself? What if I do `spiral.forward(i * i)` instead?
 
 
 ---
@@ -223,13 +198,9 @@ turtle.done()
 
 ### Additional notes 
 
-What if you want different colors? You could always try and guess what colors the turtle 
-module can support, but if you want to be precise, you can use this 
-[colorpicker](http://www.colorpicker.com/) instead.
+What if you want different colors? You could always try and guess what colors the turtle module can support, but if you want to be precise, you can use this [colorpicker](http://www.colorpicker.com/) instead.
 
-At the top of the screen, the website will provide a '#' mark and a sequence of 6 
-letters or numbers that represents the color. The turtle module will accept colors 
-in this format.
+At the top of the screen, the website will provide a '#' mark and a sequence of 6 letters or numbers that represents the color. The turtle module will accept colors in this format.
 
 ```python
 import turtle 
@@ -250,16 +221,11 @@ Make sure to always include the `#` character before including those 6 character
 
 ## Example 6: Variables
 
-One of the powerful things about computers and programming is that they can do work 
-humans would find boring. For example, what if we wanted to draw a hexagon (shape with 
-6 sides)? By how many degrees should we turn each time? What if we want a shape with 
-15 sides?
+One of the powerful things about computers and programming is that they can do work humans would find boring. For example, what if we wanted to draw a hexagon (shape with 6 sides)? By how many degrees should we turn each time? What if we want a shape with 15 sides?
 
-Rather then computing the number each time ourselves, we can instead define **variables**
-and have Python use a formula to find out for us.
+Rather then computing the number each time ourselves, we can instead define **variables** and have Python use a formula to find out for us.
 
-Here, we've set the number of sides to be 6, and the side length to be 70. What happens 
-if we change the variables?
+Here, we've set the number of sides to be 6, and the side length to be 70. What happens if we change the variables?
 
 {% turtle polygon %}
 ```python 
@@ -281,12 +247,9 @@ turtle.done()
 
 ### Additional notes
 
-Something that confuses many beginners is the `=` symbol. In Math, whenever we see 
-`A = B`, we know that A and B _must_ be identical -- in Math, `=` means "equality".
+Something that confuses many beginners is the `=` symbol. In Math, whenever we see `A = B`, we know that A and B _must_ be identical -- in Math, `=` means "equality".
 
-However, `=` means something a little different in programming. When we see `A = B`, it
-means that whatever `A` is will now be set equal to `B` -- in programming, `=` means 
-"assignment".
+However, `=` means something a little different in programming. When we see `A = B`, it means that whatever `A` is will now be set equal to `B` -- in programming, `=` means "assignment".
 
 So, if we see the following code:
 
@@ -298,19 +261,16 @@ my_variable = my_variable + 5
 print(my_variable)
 ```
 
-...the output will be `7` and `12`. We always computer whatever is on the right side, 
-then change the variable on the left side to that value.
+...the output will be `7` and `12`. We always computer whatever is on the right side, then change the variable on the left side to that value.
 
 
 ---
 
 ## Example 7: Nested loops 
 
-This will make a matrix of dots 5 dots wide and 7 dots high. Try experimenting with 
-the variables at the top to change the number of dots and the distance between them.
+This will make a matrix of dots 5 dots wide and 7 dots high. Try experimenting with the variables at the top to change the number of dots and the distance between them.
 
-The for loop on the very inside (`for i in range(width):`) draws a single line of dots. 
-The code then causes the turtle to move back, then move down a row.
+The for loop on the very inside (`for i in range(width):`) draws a single line of dots. The code then causes the turtle to move back, then move down a row.
 
 {% turtle dots %}
 ```python
@@ -342,16 +302,9 @@ turtle.done()
 
 ## Example 8: Jumping around and changing speed 
 
-`turtle.setposition(x, y)` will set the turtle's position to the coordinates you 
-plug in. (0, 0) is located at the center of the screen -- where the turtle first 
-started. Note that you need to make sure the turtle's pen is up, otherwise it'll 
-draw a line back to that.
+`turtle.setposition(x, y)` will set the turtle's position to the coordinates you plug in. (0, 0) is located at the center of the screen -- where the turtle first started. Note that you need to make sure the turtle's pen is up, otherwise it'll draw a line back to that.
 
-You can change the speed of the turtle by doing `turtle.speed(number)`. If you set 
-the speed to 10, the turtle will go really fast. If you set the speed to 1, the 
-turtle will go really slow (which is useful for trying to understand how some 
-complicated thing is being drawn). If you set the speed to zero, however, the turtle 
-will go at warpspeed and will draw as fast as it can.
+You can change the speed of the turtle by doing `turtle.speed(number)`. If you set the speed to 10, the turtle will go really fast. If you set the speed to 1, the turtle will go really slow (which is useful for trying to understand how some complicated thing is being drawn). If you set the speed to zero, however, the turtle will go at warpspeed and will draw as fast as it can.
 
 The speed cannot be lesser then 0 or greater then 10.
 

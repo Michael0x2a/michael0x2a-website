@@ -26,7 +26,7 @@ production-ready site, run:
 ...and deploy the contents of the `dist` folder. If you want to view the production 
 code on localhost, run:
 
-    grunt serve:build
+    grunt serve:dist
     
 Running this command will first run `grunt build` then serve the contents of the 
 `dist` folder at `localhost:9000`.
