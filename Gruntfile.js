@@ -201,6 +201,7 @@ module.exports = function (grunt) {
     uncss: {
       dist: {
         options: {
+          ignore: ['.collapse', '.collapsing', '.collapse.in'],
           csspath: '../.tmp',
           stylesheets: ['../.tmp/_assets/css/main.css']
         },
@@ -211,7 +212,7 @@ module.exports = function (grunt) {
     },
     wiredep: {
       options: {
-        cwd: '<%= yeoman.app %>'
+        
       },
       app: {
         src: ['<%= yeoman.app%>/_layouts/*.html'],
@@ -224,7 +225,7 @@ module.exports = function (grunt) {
     },
     jekyll: {
       options: {
-        bundleExec: true,
+        //bundleExec: true,
         config: '_config.yml,_config.build.yml',
         src: '<%= yeoman.app %>'
       },
