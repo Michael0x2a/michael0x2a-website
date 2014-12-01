@@ -6,6 +6,8 @@ updated: 2014-07-29
 parent_id: blog
 page_id: mastermind-solver
 math: true
+tags: 
+- project
 ---
 
 Link: [http://projects.michael0x2a.com/mastermind_solver](http://projects.michael0x2a.com/mastermind_solver)

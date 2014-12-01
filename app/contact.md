@@ -4,15 +4,42 @@ title: "Contact"
 page_id: contact
 ---
 
-<dl>
-    <dt>Email</dt>
-    <dd>
-        <strong>michael.lee.<span style="display:none;">[RANDOM ANTI-SPAM TEXT -- remove me]</span>0x2a &lt; @ &gt; gmail.com</strong>
-        <br />
-        michael0x2a<span style="display:none;">[RANDOM ANTI-SPAM TEXT -- remove me]</span> &lt; @ &gt; gmail.com
-        <br />
-        mlee42 &lt; @ &gt; uw.<span style="display:none;">[RANDOM ANTI-SPAM TEXT -- remove me ]</span>edu
-        <br />
-        mlee42 &lt; @ &gt; cs.washington.<span style="display:none;">[RANDOM ANTI-SPAM TEXT -- remove me ]</span>edu
-    </dd>
-</dl>
+## Contact form
+
+<form action="//forms.brace.io/michael.lee.0x2a@gmail.com" method="POST" role="form" class="form-horizontal">
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-10">
+            <input id="name" name="name" type="text" name="name" class="form-control" />
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="email" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+            <input id="email" name="email" type="email" name="_replyto" class="form-control" />
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="message" class="col-sm-2 control-label">Message</label>
+        <div class="col-sm-10">
+            <textarea id="message" name="message" class="form-control"></textarea>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default" value="Send">Submit</button>
+        </div>
+    </div>
+</form>
+
+## Via email
+
+<ul>
+    <li><strong>michael.lee.<span style="display:none;">[RANDOM ANTI-SPAM TEXT -- remove me]</span>0x2a &lt; @ &gt; gmail.com</strong></li>
+    <li>michael0x2a<span style="display:none;">[RANDOM ANTI-SPAM TEXT -- remove me]</span> &lt; @ &gt; gmail.com</li>
+    <li>mlee42 &lt; @ &gt; uw.<span style="display:none;">[RANDOM ANTI-SPAM TEXT -- remove me ]</span>edu</li>
+    <li>mlee42 &lt; @ &gt; cs.washington.<span style="display:none;">[RANDOM ANTI-SPAM TEXT -- remove me ]</span>edu</li>
+</ul>

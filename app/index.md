@@ -18,5 +18,12 @@ Want to know more about me? My [resume](/resume) page contains a fairly good sum
 
 ## Current projects and focuses
 
--   Internship at Groupon
--   Revamping this website
+-   Classes I'm teaching
+    -   [CSE 143](http://courses.cs.washington.edu/courses/cse143/14au/) (the second introductory programming class at UW)
+    -   [FIG](http://fyp.washington.edu/connect-through-academics/first-year-interest-groups/) (a program to help freshman adjust to life at UW).
+-   Extracurriculars
+    -   [UW Formula Motorsports](http://uwashingtonfsae.com/) -- currently working on telemetry software
+-   Classes I'm taking
+    -   Physics (optics, light)
+    -   Math (matrixes, differential equations)
+    -   Philosophy (introduction to ethics)

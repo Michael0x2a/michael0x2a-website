@@ -4,6 +4,8 @@ title: "Lisp for Touchdevelop"
 date: 2013-07-29
 parent_id: blog
 page_id: lisp-for-touchdevelop
+tags: 
+- project
 ---
 
 ## Summary

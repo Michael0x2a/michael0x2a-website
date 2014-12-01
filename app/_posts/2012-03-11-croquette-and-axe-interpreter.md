@@ -4,6 +4,8 @@ title: "Croquette and Axe Interpreter"
 date: 2012-03-11
 parent_id: blog
 page_id: croquette-and-axe-interpreter
+tags: 
+- project
 ---
 
 ## Introduction

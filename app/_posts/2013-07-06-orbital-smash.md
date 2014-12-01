@@ -5,6 +5,8 @@ date: 2013-07-06
 parent_id: blog
 page_id: orbital-smash
 math: true
+tags: 
+- project
 ---
 
 Last Saturday, May 26th, 2013, I participated in [CodeDay Seattle][cds], a 24 hour hackathon hosted by [StudentRND][srnd]. During the hackathon, I wrote a short game called [Orbital Smash][os], and won the "Best Game" award! Technical details about the game are located below.
@@ -17,7 +19,7 @@ Here is a YouTube video demonstrating gameplay. Unfortunately, the internet was 
 
 In essence, the game is an arcade-style survival game where you try to dodge any enemies and bullets. Using your tractor beam, you can make objects orbit around you and use those to smash opposing enemies.
 
-  [cds]: http://seattle.codeday.org/
+  [cds]: https://codeday.org/seattle
   [srnd]: http://studentrnd.org/
   [os]: https://github.com/Michael0x2a/Orbital-Smash
 

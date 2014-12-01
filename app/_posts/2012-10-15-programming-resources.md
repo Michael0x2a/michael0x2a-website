@@ -17,7 +17,7 @@ I generally tend to recommend Python as an ideal language for a beginner &ndash;
 
 These are resources I found helpful for learning specifically the Python programming language.
 
-1.  [Learn Python the Hard Way](learnpythonthehardway.org)  
+1.  [Learn Python the Hard Way](http://learnpythonthehardway.org/book)
 
     Despite the name, this is actually one of the most useful and most clear tutorials I've found. Many other tutorials tend to be somewhat confusing, and either try teaching you to code without teaching the underlying reason behind things or takes things to the other extreme and becomes very confusing. This book very neatly avoids this trap, and is extremely clear and easy to understand and follow.
     
@@ -33,10 +33,12 @@ I'd recommend that you pick either the first or second tutorial. However, they d
 
 However, I do **NOT** recommend you try reading [Dive into Python](http://www.diveintopython.net/). It's written for people with prior programming experience, and so will be fairly difficult for beginners. It was also last updated in 2004, and is very outdated. It uses Python 2.2 or 2.3, instead of Python 2.7 or 3.0, so is missing several key language features. 
 
+However, I *can* recommend [Dive into Python 3](http://www.diveintopython3.net/), the revised version of _Dive into Python_. The revised version is still geared towards people with prior programming experience, but is much more up-to-date and fixed many of the objections I had to the previous version.
+
 If you have experience in other languages, and want to know in what ways Python is idiomatically different from other languages, or if you're a beginner who wants to know what the "correct" way to write programs in Python is, try reading these articles. They explain some of the underlying principles of Python.
 
 *   [The Zen of Python](http://www.python.org/dev/peps/pep-0020/)
-*   [What is Pythonic?](http://faassen.n--tree.net/blog/view/weblog/2005/08/06/0)
+*   [What is Pythonic?](http://blog.startifact.com/posts/older/what-is-pythonic.html)
 
 
 ### Shorter articles
