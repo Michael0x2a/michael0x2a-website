@@ -14,7 +14,7 @@ module.exports = function (grunt) {
   // Rewrite urls to handle missing .html
   var rewriteModule = require('http-rewrite-middleware');
   
-  var middleware_func = function(connect, options) {
+  var middlewareFunc = function(connect, options) {
     var middlewares = [];
     middlewares.push(rewriteModule.getMiddleware([
       {
@@ -107,7 +107,7 @@ module.exports = function (grunt) {
             '.jekyll',
             '<%= yeoman.app %>'
           ],
-          middleware: middleware_func
+          middleware: middlewareFunc
         }
       },
       dist: {
@@ -116,7 +116,7 @@ module.exports = function (grunt) {
           base: [
             '<%= yeoman.dist %>'
           ],
-          middleware: middleware_func
+          middleware: middlewareFunc
         }
       },
       test: {
@@ -127,7 +127,7 @@ module.exports = function (grunt) {
             'test',
             '<%= yeoman.app %>'
           ],
-          middleware: middleware_func
+          middleware: middlewareFunc
         }
       }
     },

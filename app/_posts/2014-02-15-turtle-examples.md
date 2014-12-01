@@ -21,7 +21,7 @@ Note: I started this document a year or so ago, but never actually got around to
 
 ## Example 1: Draw a line
 
-Tne of the simplest things you can do using the turtle module is to draw a line. There are always four steps you need to do in order to use the turtle module:
+One of the simplest things you can do using the turtle module is to draw a line. There are always four steps you need to do in order to use the turtle module:
 
 1.  **Import** the turtle module. If we skip this step, there'll be no turtle to control.
 2.  **Create** a turtle to control.

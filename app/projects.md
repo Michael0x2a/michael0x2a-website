@@ -10,7 +10,7 @@ Although all of the following writeups that I've done are all in my [blog](/blog
   
 <ul>
     {% for post in site.tags.project %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        <li><a href="{{ post.url | clean_url }}">{{ post.title }}</a></li>
     {% endfor %}
 </ul>
 

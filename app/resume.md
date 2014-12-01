@@ -9,11 +9,10 @@ You can find the most up-to-date information about me in one of the following pl
 1. My [Linkedin][li] profile contains my full resume and profile
 2. My [Github][git] profile contains a portfolio of many of the projects I've worked on.
 
-Those following three locations are always guaranteed to be up-to-date and should be considered the "canonical" versions of my resume and portfolio. You can find additional information about me at the following locations:
+The above two sites are always guaranteed to be up-to-date and should be considered the "canonical" versions of my resume and portfolio. You can find additional information about me at the following locations:
 
 1. My [StackCareers][sc] profile for more tech-related information
-2. My [projects][proj] page on this website for detailed writeups
-3. My [ReadyForce][rf] profile 
+2. My [projects][proj] page on this website for links to more detailed writeups
 
 Though I do make an attempt to keep these additional sites as up-to-date as possible, they often lag behind by a few months in comparison to my Linkedin and Github profiles. Sorry about that.
 
@@ -22,5 +21,4 @@ Though I do make an attempt to keep these additional sites as up-to-date as poss
 
 [sc]: http://careers.stackoverflow.com/michael0x2a
 [proj]: http://michael0x2a.com/projects
-[rf]: http://readyforce.com/michael0x2a
 
