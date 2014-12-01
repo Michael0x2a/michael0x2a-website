@@ -5,6 +5,6 @@
     "jquery": "~1.10.2",
     "json3": "~3.3.1",
     "es5-shim": "~3.1.0",
-    "bootstrap-sass-official": "~3.2.0"
+    "bootstrap-sass-official": "~3.3.1"
   }
 }
