@@ -10,16 +10,19 @@ The source code, including both content and build instructions, can be found at:
     
 I manage my dependencies and automate my build using:
 
-    Yeoman
-    Bower
-    Grunt
+-   Yeoman
+-   Bower
+-   Grunt
     
-I build my site using the following framework and plugins:
+The core of this site is built around Jekyll, but I use many other plugins and 
+frameworks to help me write my CSS/JavaScript, or help me optimize this site.
+You can find a full list by consulting my:
 
-    Jekyll
-    kramdown-with-pygments (https://github.com/mvdbos/kramdown-with-pygments)
-    jekyll-humanize (https://github.com/23maverick23/jekyll-humanize)
-    Jekyll sitemap generator (https://github.com/kinnetica/jekyll-plugins)
-    
+-   Gemfile (Jekyll):  
+    https://github.com/Michael0x2a/michael0x2a-website/blob/master/Gemfile
+-   bower.json (frontend):  
+    https://github.com/Michael0x2a/michael0x2a-website/blob/master/bower.json
+-   package.json (build and optimization):
+    https://github.com/Michael0x2a/michael0x2a-website/blob/master/package.json
     
     
