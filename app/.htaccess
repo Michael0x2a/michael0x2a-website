@@ -32,3 +32,8 @@ Header set X-UA-Compatible "IE=Edge,chrome=1"
  Header set Cache-Control "max-age=86400"
 </FilesMatch>
 </IfModule>
+
+# RIP Terry Pratchett
+<IfModule headers_module>
+    header set Clacks-Overhead "GNU Terry Pratchett"
+</IfModule>
