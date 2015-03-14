@@ -4,11 +4,6 @@ title: Home
 page_id: home
 ---
 
-## Latest posts 
-
-{% include latest-posts.html %}
-
-
 ## About Me 
 
 Hi, I'm Michael Lee. This website currently serves as a way for me to showcase my projects and dump miscellaneous tidbits in the form of a blog. Currently, I'm mostly interested in programming and computer science, so most of the content will be CS-oriented. 
@@ -27,14 +22,22 @@ Want to know more about me? My [resume](/resume) page contains a fairly good sum
 -   Classes I'm taking
     -   Math (linear algebra + matlab)
     -   Philosophy (intro to logic + the philosophy of language)
+        
+
+## Latest posts 
+
+{% include latest-posts.html %}
+
     
 ## About this website
 
-This website is statically generated using [Jekyll][jrb], using [Yeoman][yeo] (see [generator-jekyllrb][jym]). The CSS is based on [Twitter-Bootstrap][boot], using [SASS][sass].
+This website is statically generated using [Jekyll][jrb], using [Yeoman][yeo] (see [generator-jekyllrb][jym]). The CSS is built on top of [Twitter-Bootstrap][boot], using [SASS][sass].
 
-Unless otherwise noted, any content on this website is dual-licensed under the [Creative Commons Attribution 4.0 International License][cc] and the [MIT License][mit].
+Unless otherwise noted, any content on this website is dual-licensed under the [Creative Commons Attribution 4.0 International License][cc] and the [MIT License][mit] -- pick whichever is more convenient for you.
 
 The source code for this website can be found on [Github][git].
+
+I have an [RSS feed](/feed.xml).
     
   [cc]: http://creativecommons.org/licenses/by/4.0/
   [mit]: http://opensource.org/licenses/MIT
