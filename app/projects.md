@@ -4,16 +4,42 @@ title: "Projects"
 page_id: projects
 ---
 
-The majority of my projects are related to programming, although I've also dabbled in piano, origami, and other miscellaneous concepts.
+The majority of my personal projects are related to programming, although I've also dabbled in piano, origami, and other miscellaneous projects.
 
-Although all of the following writeups that I've done are all in my [blog](/blog), I've linked them here for convenience.
+This page links to every "interesting" and non-trivial project that I've worked on so far. I also have some other projects, but they're relatively minor and not really worth mentioning -- you can check my [Github profile][git] to find those.
+
+Several projects also have writeups associated with them. You can find all writeups in my [blog](/blog), but I've linked them here for convenience.
+
+The projects are ordered in rough chronological order, with the oldest first and the most recent last.
+
+## Projects
   
 <ul>
-    {% for post in site.tags.project %}
-        <li><a href="{{ post.url | clean_url }}">{{ post.title }}</a></li>
+    {% for project in site.data.projects %}
+        <li>
+            <p><strong>{{ project.name }} &mdash; {{ project.date }}</strong><br />
+                {% if project.repo != "" %}
+                    <a href="{{ project.repo }}" rel="external">
+                        Link to repo
+                    </a>
+                {% else %}
+                    Repo not available
+                {% endif %}
+                {% if project.livelink != "" %}
+                    | 
+                    <a href="{{ project.livelink }}" rel="external">
+                        Try it out
+                    </a>
+                {% endif %}
+                {% if project.writeup != "" %}
+                    | <a href="{{ project.writeup }}">Writeup</a>
+                {% endif %}
+            </p>
+            <p>{{ project.description }}</p>
+        </li>
     {% endfor %}
 </ul>
 
-You can also check my [Github profile][git] for the projects that I didn't writing about.
 
   [git]: http://github.com/michael0x2a
+  [linkedin]: http://linkedin.com/in/michael0x2a

@@ -1,0 +1,90 @@
+- name: "Croquette and Axe Interpreter"
+  description: >
+    My first 'real' programming project -- a tokenizer and interpreter for 
+    a programming language that runs on TI-84 graphing calculators".
+  writeup: /blog/croquette-and-axe-interpreter
+  livelink: ""
+  repo: https://github.com/Michael0x2a/axe-interpreter
+  date: 2009-2010
+- name: "Skyline Robotics Club (Spartabots)"
+  description: >
+    I was a member (and later in charge) of my high school's robotics club 
+    for three years. My major technical contribution was programming the robot 
+    and setting up most of the electronics.
+  writeup: /blog/robotics-2012-2013
+  livelink: ""
+  repo: https://code.google.com/p/skyline-robotics/source/browse/#svn
+  date: 2010-2013
+  date: May 2013
+- name: "Mastermind Solver"
+  description: >
+    A webapp that lets you solve Mastermind games. Works with an 
+    arbitrary number of pegs.
+  writeup: /blog/mastermind-solver
+  livelink: http://projects.michael0x2a.com/mastermind_solver/
+  repo: https://github.com/michael0x2a/mastermind-solver
+  date: May 2013
+- name: "Orbital Smash"
+  description: >
+    A game I developed during CodeDay Seattle -- it ended up winning the 
+    "Best Game" award.
+  writeup: /blog/orbital-smash
+  livelink: ""
+  repo: https://github.com/Michael0x2a/Orbital-Smash
+  date: May 2013
+- name: Niftybot
+  description: >
+    Code to power a robot that solicits donations built during StudentRND labs. 
+    Features a rudimentary AI and face detection.
+  writeup: ""
+  livelink: ""
+  repo: https://github.com/Michael0x2a/Niftybot
+  date: Summer 2013
+- name: "Lisp for TouchDevelop"
+  description: >
+    A Lisp interpreter written in TouchDevelop, a language designed by 
+    Microsoft to be written primarily using tablets, phones, and other
+    touch devices.
+  writeup: /blog/lisp-for-touchdevelop
+  livelink: http://touchdevelop.com/users/michael0x2a/lispfortouchdevelop
+  repo: ""
+  date: July 2013
+- name: "TEDxUofW"
+  description: >
+    The website for TEDxUofW, written in Jekyll. We redesign the website each year
+    based around a new theme and motif.
+  writeup: ""
+  livelink: http://tedxuofw.com
+  repo: https://github.com/Michael0x2a/tedxuofw-website
+  date: May 2014 - present
+- name: "UW Formula (Telemetry)"
+  description: >
+    I'm a member of UW Formula, a club on-campus which builds and competes
+    with race cars. I'm currently responsible for developing their telemetry
+    program. I also recently joined their IT team, and will most likely be doing
+    computer-related tasks there.
+  writeup: ""
+  livelink: ""
+  repo: ""
+  date: Sep 2015 - present
+- name: "Curated Programming Resources"
+  description: >
+    A curated list of resources for learning new programming languages
+    and technologies. The canonical version is hosted on Github and is
+    mirrored on my blog.
+  writeup: /blog/curated-programming-resources
+  livelink: https://github.com/Michael0x2a/curated-programming-resources/blob/master/resources.md
+  repo: https://github.com/Michael0x2a/curated-programming-resources
+  date: Nov 2015 - present
+- name: "EdRepublic"
+  description: >
+    I'm currently co-founding a startup geared towards helping developers find 
+    jobs/learn skills to acquire jobs, and helping companies optimize and shorten
+    their hiring process. I'm currently working on developing a lot of the underlying
+    algorithms and analytics.
+  writeup: ""
+  livelink: http://edrepublic.com
+  date: Nov 2015 - present
+    
+    
+    
