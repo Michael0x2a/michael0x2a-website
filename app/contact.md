@@ -6,7 +6,7 @@ page_id: contact
 
 ## Contact form
 
-<form action="//forms.brace.io/michael.lee.0x2a@gmail.com" method="POST" role="form" class="form-horizontal">
+<form action="//formspree.io/michael.lee.0x2a@gmail.com" method="POST" role="form" class="form-horizontal">
     <div class="form-group">
         <label for="name" class="col-sm-2 control-label">Name</label>
         <div class="col-sm-10">
@@ -42,4 +42,5 @@ page_id: contact
     <li>michael0x2a<span style="display:none;">[RANDOM ANTI-SPAM TEXT -- remove me]</span> &lt; @ &gt; gmail.com</li>
     <li>mlee42 &lt; @ &gt; uw.<span style="display:none;">[RANDOM ANTI-SPAM TEXT -- remove me ]</span>edu</li>
     <li>mlee42 &lt; @ &gt; cs.washington.<span style="display:none;">[RANDOM ANTI-SPAM TEXT -- remove me ]</span>edu</li>
+    <li>michael &lt; @ &gt; edre<span style="display:none;">[RANDOM ANTI-SPAM TEXT -- remove me]</span>public.com</li>
 </ul>
