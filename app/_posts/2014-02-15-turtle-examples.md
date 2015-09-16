@@ -2,16 +2,18 @@
 layout: post
 title: "Turtle examples"
 date: 2014-02-15
-updated: 2014-07-29
+updated: 2015-09-15
 parent_id: blog
 page_id: turtle-examples
 ---
 
 ## Introduction
 
-My very first introduction to programming came in 7th or 8th grade in one of my elective classes. On the first or second day of class, my teacher explained to us that we'd be learning a programming language called "Logo", which was based around the idea of controlling an imaginary "turtle" with a pen attached to its tail to draw pictures and graphics.
+My very first introduction to programming was in middle school during the first week of class. My teacher explained that we'd be learning a programming language called "Logo", which would let you control an imaginary "turtle" with a pen attached to its tail to draw pictures and packets.
 
-Our teacher then proceeded to hand us a thick packet of examples, and told us to go off and try them. So long as we completed a set number of exercises each day, we were free to experiment and do whatever we liked. I had a tremendous amount of fun in this class. I'm not entirely sure how much I actually ended up learning, since I was mostly blindly copying and tweaking code, but I do remember to this day having tremendous amounts of fun.
+We were then given a thick packet of examples, and was set free to experiment and do whatever we liked as long as we completed a certain number of exercises each day.
+
+I'm not sure how much I ended up actually learning, since I was mostly blindly copying and tweaking code, but I do remember to this day having a huge amount of fun playing with Logo.
 
 So naturally, I was very pleased to discover that Python, one of my favorite programming languages, came built-in with a module named "[turtle][turtle-doc]" that was very similar to Logo. This document is an attempt to mirror some of the spirit of the original packet of examples that first introduced me to programming.
 

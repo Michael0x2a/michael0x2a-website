@@ -2,6 +2,7 @@
 layout: post
 title: "College Observations: Freshman, Quarter 1"
 date: 2013-12-29
+updated: 2015-09-14
 parent_id: blog
 page_id: college-observations-freshman-quarter-1
 ---
@@ -22,7 +23,7 @@ I took the following classes:
 
 Out of all the classes I took, this one, surprisingly enough, ended up being my favorite. The class covered the development and various phases of modern art starting roughly around WWII up until the early 2000s, and covered a wide range of artistic movements from Abstract Expressionism to Fluxus to Installation art.
 
-The part I enjoyed most about this class was that it finally provided the context and history I was missing that prevented me from previously understanding why anybody should *care* about modern art. It's sort of a cliché, but it's true -- I previously thought that modern art was essentially just a bunch of pretentious artists passing off scribbles as art, but this class completely changed my opinion regarding modern art. 
+The part I enjoyed most about this class was that it finally provided the context and history I was missing that prevented me from previously understanding why anybody should *care* about modern art. It's sort of a cliche, but it's true -- I previously thought that modern art was sort of pretentious and devoid of actual artistic talent, but this class completely changed my opinion regarding modern art. 
 
 I can't claim that I understand every aspect of modern art (it was only a single semester, after all!), but it provided the missing historical backdrop I needed to make sense of what I see in art galleries and museums.
 
@@ -30,7 +31,7 @@ I can't claim that I understand every aspect of modern art (it was only a single
 
 This is basically a calculus class -- it covered mostly derivatives. I took this class mostly because it's a prerequisite in order to apply to be a CS major. The class covered material I had learned mostly in 10th grade, and so turned out to be mostly review.
 
-The only main observation I had was that my classmates were intolerable whiners.
+The only main observation I had was that my classmates seemed to always be constantly complaining.
 
 ### CSE 143X
 
@@ -50,7 +51,7 @@ This was a mainly discussion-based class which covered a random assortment of to
 
 This was a "freshmen seminar", a program introduced by UW where a small group of 15 to 20 students have a weekly seminar with a member of faculty. The over-arching goal is to provide a contrast to the 300 students lecture-style introductory classes most students take, and to provide an opportunity for students to interact with a professor who actually knows them by name.
 
-Out of all my classes, the professor leading this one matched the archetype of what I imagined a college professor to be best -- he was quirky, and could draw on a vast array of experience and knowledge to drive the discussion.
+Out of all my classes, the professor leading this one most closely matched what I imagined a college professor to be like -- he was quirky, very smart, and was able to draw on a seemingly-endlessarray of experience and knowledge to drive the discussion.
 
 ## Hunting for internships
 
