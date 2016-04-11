@@ -2,7 +2,7 @@
 layout: post
 title: "Turtle examples"
 date: 2014-02-15
-updated: 2015-09-15
+updated: 2016-04-11
 parent_id: blog
 page_id: turtle-examples
 ---
@@ -81,9 +81,9 @@ turtle.done()
 
 The two turtle commands we've learned so far are `forward(x)`, which moves the turtle forward in the direction its facing by `x` number of pixels, and `right(d)`, which makes it turn clockwise by `d` number of degrees. 
 
-Two additional key commands are `backwards(x)`, which makes the turtle move back, and `left(d)`, which makes the turtle turn **counterclockwise** by `d` degrees. 
+Two additional key commands are `backward(x)`, which makes the turtle move back, and `left(d)`, which makes the turtle turn **counterclockwise** by `d` degrees. 
 
-Exercise: try modifying writing code to draw a square using only the `backwards` and `left` commands. 
+Exercise: try modifying writing code to draw a square using only the `backward` and `left` commands. 
 
 ---
 
@@ -281,8 +281,8 @@ import turtle
 seurat = turtle.Turtle()
 
 dot_distance = 25
-width = 50
-height = 70
+width = 5
+height = 7
 
 seurat.penup()
 
@@ -290,7 +290,7 @@ for y in range(height):
     for i in range(width):
         seurat.dot()
         seurat.forward(dot_distance)
-    seurat.backwards(dot_distance * width)
+    seurat.backward(dot_distance * width)
     seurat.right(90)
     seurat.forward(dot_distance)
     seurat.left(90)
