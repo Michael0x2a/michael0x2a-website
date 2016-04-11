@@ -7,7 +7,7 @@ module Tags
         
         def render(context)
             site      = context.registers[:site]
-            converter = site.getConverterImpl(Jekyll::Converters::Markdown)
+            converter = site.find_converter_instance(Jekyll::Converters::Markdown)
 
             lines = super.rstrip.split(/\r\n|\r|\n/).select { |line| line.size > 0 }
             indentation = lines.map do |line|

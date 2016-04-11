@@ -35,7 +35,8 @@ highlighter: pygments
 # Sitemap
 sitemap:
     file: "/sitemap.xml"
-    exclude: "/feed.xml"
+    exclude: 
+    -   "/feed.xml"
     include_posts:
     -   "/index.html"
     -   "/blog.html"
