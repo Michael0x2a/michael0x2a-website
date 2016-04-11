@@ -13,13 +13,26 @@ Want to know more about me? My [resume](/resume) page contains a fairly good sum
 
 ## Current projects and focuses
 
+- Classes I'm taking
+    - Machine Learning, Graphics, Networks, and Intro to Embedded
 - Projects
-    - [UW Formula Motorsports](http://uwashingtonfsae.com/) -- currently working on telemetry software and the team website
-    - Google -- finishing up internship
-- Classes I've taught:
-    - [CSE 143](http://courses.cs.washington.edu/courses/cse143/15wi/) -- the second introductory programming class at UW
-- Other:
-    - Settling in to my new apartment.
+    - [UW Formula Motorsports](http://uwformula.com/) -- currently working on telemetry software 
+- Teaching:
+    - Currently TA-ing: [CSE 311][cse311], the "introduction to theory/discrete math" course
+    - Other courses I've TA-ed: 
+        - [CSE142][cse142], [CSE 143][cse143], and [CSE 143x][cse143x] -- first and second introductory courses at UW. CSE 143x is an accelerated version of the course that covers material from both CSE 142 and 143.
+        - [CSE 332][cse332] -- data structures, algorithms, and parallelism.
+- Things I've written/am writing
+    - [CSE 14x Style Guide][style] -- an (unofficial) style guide for CSE 14x series. Covers both Java-specific guidelines, commenting guidelines, and general code structure guidelines. Mostly finished, but is missing some content and could use some copy-editing.
+    - [Curated Programming resources][curated] -- a collection of hand-picked resources for learning programming. In limbo, and will probably go through a bunch of changes when I find the time. (Maybe over summer?)
+
+  [cse332]: http://courses.cs.washington.edu/courses/cse332
+  [cse311]: http://courses.cs.washington.edu/courses/cse311/16sp
+  [cse143x]: http://courses.cs.washington.edu/courses/cse143
+  [cse143]: http://courses.cs.washington.edu/courses/cse143
+  [cse142]: http://courses.cs.washington.edu/courses/cse142
+  [style]: https://courses.cs.washington.edu/courses/cse143x/15au/style/
+  [curated]: https://github.com/Michael0x2a/curated-programming-resources/blob/master/resources.md
 
 ## Latest posts 
 
